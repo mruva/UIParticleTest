@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3985167232309189097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3985167232309189099}
+  - component: {fileID: 3985167232309189096}
+  m_Layer: 0
+  m_Name: AudioManagerv2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3985167232309189099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3985167232309189097}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 382.91394, y: 186.16597, z: -22.84375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3985167232309189096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3985167232309189097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2307e519e5fc1412ea36c7a2a35e59c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _idleSnap: {fileID: 24500006, guid: 83242fcc394fb488eacd5cb6243cd71e, type: 2}
+  _enemySnap: {fileID: -8567052597472803052, guid: 83242fcc394fb488eacd5cb6243cd71e,
+    type: 2}
+  _ambIdle: {fileID: 24500006, guid: f64e87444a2cb45dd9b803cb73fd0b8e, type: 2}
+  _ambIN: {fileID: -1969139786345491124, guid: f64e87444a2cb45dd9b803cb73fd0b8e, type: 2}
+  sounds:
+  - name: Musica
+    mix: {fileID: 8780672723805989468, guid: 83242fcc394fb488eacd5cb6243cd71e, type: 2}
+    clip: {fileID: 8300000, guid: 2d81d1624e0a548e1830b956bd9d973f, type: 3}
+    volume: 0.53
+    pitch: 1
+    spatialBlend: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: Coin
+    mix: {fileID: 0}
+    clip: {fileID: 8300000, guid: 81d43d46c21864703b7518ed5f703d6b, type: 3}
+    volume: 0.53
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Bomb
+    mix: {fileID: 0}
+    clip: {fileID: 8300000, guid: 0de694a0fe81f4a8096666536657d186, type: 3}
+    volume: 0.53
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: MusicEnemy
+    mix: {fileID: 3784064759053563302, guid: 83242fcc394fb488eacd5cb6243cd71e, type: 2}
+    clip: {fileID: 8300000, guid: a9ab364e244474ca5a43ddbe0546c504, type: 3}
+    volume: 0.53
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: EventMusic
+    mix: {fileID: -8991393662664330250, guid: 83242fcc394fb488eacd5cb6243cd71e, type: 2}
+    clip: {fileID: 8300000, guid: 663dd706feae07440a4a3431f6a9f262, type: 3}
+    volume: 0.53
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerMove
+    mix: {fileID: 0}
+    clip: {fileID: 8300000, guid: 79bcb9c7d2a57d2448a728eb108e97d9, type: 3}
+    volume: 0.53
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: MagneticTrap
+    mix: {fileID: 0}
+    clip: {fileID: 8300000, guid: 6a917f26b2e06174ab1dd4a8087f286e, type: 3}
+    volume: 0.53
+    pitch: 1
+    spatialBlend: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: RedTrap
+    mix: {fileID: 0}
+    clip: {fileID: 8300000, guid: ac65d38a65ef9034d8e6d8c387996400, type: 3}
+    volume: 0.53
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Ambience
+    mix: {fileID: 24300002, guid: f64e87444a2cb45dd9b803cb73fd0b8e, type: 2}
+    clip: {fileID: 8300000, guid: 4912c2e139733614ea1fe6874787e555, type: 3}
+    volume: 0.53
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: EndLevelJSax
+    mix: {fileID: 0}
+    clip: {fileID: 8300000, guid: f72acac135caf44f6accaab6bd2057e7, type: 3}
+    volume: 0.53
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: WinJingle
+    mix: {fileID: 0}
+    clip: {fileID: 8300000, guid: 0a926ec5082400b49be3ea96e1b94a3d, type: 3}
+    volume: 0.53
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: LoseJingle
+    mix: {fileID: 0}
+    clip: {fileID: 8300000, guid: a5855d8b1d0949641bc45bba45bea58d, type: 3}
+    volume: 0.53
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Button
+    mix: {fileID: 0}
+    clip: {fileID: 8300000, guid: be993915cc6194c1282e32c6ad31728f, type: 3}
+    volume: 0.53
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
